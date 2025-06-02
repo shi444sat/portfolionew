@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import avtarImg from '../../assets/avtarImg1.png'
+
 import TextChanger from '../TextChanger'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import homeimg from '../../assets/homeimgnew.webp'
+import homeimg from '../../assets/bg.webp'
 
 const Home = () => {
     useEffect(() => {
@@ -33,17 +33,17 @@ const Home = () => {
                 <div className="w-full md:w-full md:pt-10 text-center md:text-center">
 
                     <h1 className="text-3xl md:text-5xl font-bold leading-normal tracking-tight font-display: swap">
-                        <TextChanger texts={["Hi, I'm Swati Kumari", "Software Developer", "Welcome!"]} speed={100} />
+                        <TextChanger texts={["Hi, I'm Shivesh Kumar Satyam", "An amateur Dev & Cybersec enthusiast."]} speed={100} />
                     </h1>
                     <div data-aos="fade-up">
                         <p className="text-sm md:p-0 p-2 md:text-2xl tracking-tight mt-4 font-display: swap;">
-                            "A Software developer passionate about building modern, responsive, and user-friendly websites using React, Tailwind CSS, and more."
-                            {/* <TextChanger texts={["A front-end developer passionate about building modern, responsive, and user-friendly websites using React, Tailwind CSS, and more."]}  speed={80}/> */}
+                           
+                           A passionate developer and student specializing in WebDev & Data Science, with a growing interest in Cybersecurity & Electronics. While I’m still honing my skills, I enjoy building projects and learning new technologies.
 
                         </p>
-                        <a href="/resume.pdf" download>
+                        <a href="/cv.pdf" download>
                             <button className="mt-5 cursor-pointer text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-cyan-400 shadow-[2px_2px_8px_1px_cyan-400]">
-                                Download Resume
+                                Download CV
                             </button>
                         </a>
                     </div>

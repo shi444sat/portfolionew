@@ -1,96 +1,78 @@
 import React, { useEffect } from 'react'
-import AboutImg from '../../assets/aboutImg.png'
+import AboutImg from '../../assets/shivesh.jpg'
 import { IoArrowForward } from "react-icons/io5";
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 const About = () => {
     useEffect(() => {
         AOS.init({
-            duration: 2000, // animation duration in ms
-            once: true,     // whether animation should happen only once
+            duration: 2000,
+            once: true,
         });
     }, []);
-    const aboutinfo = [
-        {
-            heading: 'ReactJS Developer',
-            desc: "As a budding ReactJS developer, I specialize in building interactive and component-based web applications. I have hands-on experience working with hooks, props, state management, and creating reusable components that bring websites to life. I'm always exploring best practices and optimizing code for performance. React’s flexibility excites me, and I love using it to transform ideas into fast, scalable, and engaging user interfaces."
-        }
-        ,
-        {
-            heading: 'Frontend Developer',
-            desc: "I’m a passionate frontend developer focused on crafting responsive, accessible, and visually appealing web experiences. With a strong foundation in HTML, CSS, and JavaScript, I bring designs to life while ensuring smooth functionality across all devices. I enjoy experimenting with layouts, animations, and performance improvements, and I’m constantly learning modern tools and frameworks to elevate the user experience."
-        }
-        ,
-        {
-            heading: 'UI/UX Developer',
-            desc: "As a UI/UX enthusiast stepping into the world of development, I believe great design is not just about visuals—it’s about how it feels to the user. I focus on designing clean, intuitive interfaces and implementing them with precision. From wireframes to final builds, I aim to ensure every interaction is meaningful and every layout is user-friendly. I actively study user behavior, current design trends, and accessibility to keep improving and building impactful user experiences."
-        }
-        ,
-    ]
+    
+
+    
     return (
-        <div id='About' className='text-white md:flex overflow-hidden items-center md:flex-wrap md:justify-center  shadow-xl mx-0 md:mx-20 bg-opacity-30 rounded-lg p-7'>
-            <div className='py-10 pb-24'>
+        <div id='About' className='text-white md:flex overflow-hidden items-center md:flex-wrap md:justify-center shadow-xl mx-0 md:mx-20 bg-opacity-30 rounded-lg p-7'>
+            <div className='py-10 pb-24 w-full'>
                 <div data-aos="fade-down" className="text-center mb-8">
                     <h2 className="text-3xl sm:text-4xl font-bold text-white">About <span className='bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 text-3xl font-bold mb-6'>Me</span> </h2>
                     <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mt-2"></div>
-
                 </div>
-                {/* <h2 data-aos="fade-right" className='text-2xl md:text-4xl font-bold'>About</h2> */}
-                <div className='md:flex flex-wrap flex-col md:flex-row items-center justify-content: center;'>
-                    <div data-aos="zoom-in-up" className='md:w-1/2'>
-                        <img className='md:h-120' src={AboutImg} alt="About Img" />
+                
+                <div className='flex flex-col md:flex-row items-center justify-center gap-10'>
+                    {/* Improved Image Section */}
+                    <div data-aos="zoom-in-up" className='w-full md:w-1/3 flex justify-center'>
+                        <div className='relative group'>
+                            <img 
+                                src={AboutImg} 
+                                alt="Shivesh Kumar Satyam" 
+                                className='w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-transparent 
+                                group-hover:border-cyan-400 transition-all duration-500 shadow-lg 
+                                group-hover:shadow-[0_0_25px_rgba(34,211,238,0.5)]'
+                            />
+                            <div className='absolute inset-0 rounded-full border-2 border-white/20 pointer-events-none'></div>
+                            <div className='absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
+                        </div>
                     </div>
-                    <div className="md:w-1/2 flex justify-center items-center">
+                    
+                    <div className="w-full md:w-2/3 flex justify-center items-center">
                         <div
                             data-aos="fade-up"
                             data-aos-duration="1000"
                             className="w-full text-white md:text-xl leading-relaxed tracking-wide"
                         >
                             <p className="text-gray-300">
-                                Hey there! I’m <span className="text-cyan-400 font-semibold">Swati</span>, a Software developer with a passion for clean design and smooth interactions. I specialize in transforming ideas into responsive, intuitive, and visually stunning websites using HTML, CSS, JavaScript, and React.
+                                Hii! I'm <span className="text-cyan-400 font-semibold">Shivesh Kumar Satyam</span>, I'm a first-year B.Tech student in Computer Science Engineering.
+                                Alongside my coursework, I am pursuing a Data Science course with IIT Madras.
+                                I'm passionate about computer science, artificial intelligence, machine learning, and modern electronics.
                             </p>
                             <p className="text-gray-300 mt-4">
-                                I thrive on creating seamless digital experiences that work beautifully on any device. From designing pixel-perfect UIs to implementing performant frontend code, I enjoy every step of the development journey.
+                                When it comes to skills, I'm still an amateur in Cybersecurity,
+                                Python, JavaScript, Java, and Electronics, but I'm steadily improving
+                                through practice and projects.
                             </p>
                             <p className="text-gray-300 mt-4">
-                                When I’m not coding, you’ll catch me exploring the latest UI/UX trends, crafting micro-interactions, or contributing to open-source. I'm always on the lookout for new challenges and learning opportunities.
-                            </p>
-                            <p className="text-cyan-300 mt-4 font-medium">
-                                Let’s connect and build something exceptional together!
+                                I'm more confident in Python, which
+                                I've used to build basic automation. I enjoy experimenting,
+                                learning by doing, and collaborating with others to grow my
+                                knowledge and experience.
                             </p>
                         </div>
                     </div>
-
-                    <div className='py-20 flex w-full '>
-                        <ul className='gap-10  flex flex-wrap justify-center '>
-                            {aboutinfo.map((ele, index) => {
-                                const animationType = index % 2 === 0 ? 'fade-down' : 'fade-up';
-
-                                return (
-                                    <div
-                                        key={index}
-                                        data-aos={animationType}
-                                        className="w-64 md:w-96 h-auto flex items-start  p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_0_20px_rgba(130,69,206,0.25)] hover:scale-105 hover:shadow-[0_0_25px_rgba(130,69,206,0.35)] transition-all duration-500 "
-                                    >
-                                        <div className="min-w-[36px] min-h-[36px] hidden md:block lg:block mt-1 text-blue-500">
-                                            <IoArrowForward size={28} />
-                                        </div>
-                                        <div className="flex-1">
-                                            <h1 className="text-xl sm:text-2xl  mb-2  font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 ">{ele.heading}</h1>
-                                            <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-                                                {ele.desc}
-                                            </p>
-                                        </div>
-                                    </div>);
-                            })}
-                        </ul>
-                    </div>
-
                 </div>
+
+                
+                    
+                          
+                        
+                  
+                
             </div>
         </div>
     )
 }
 
-export default About
+export default About;

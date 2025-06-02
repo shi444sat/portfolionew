@@ -1,3 +1,6 @@
+  import { title } from "framer-motion/client";
+
+
 
 
 export const SkillsInfo = [
@@ -6,55 +9,51 @@ export const SkillsInfo = [
     skills: [
       { name: 'HTML' },
       { name: 'CSS' },
-      // { name: 'SASS' },
       { name: 'JavaScript' },
       { name: 'React JS' },
-      // { name: 'Angular' },
-      { name: 'Redux' },
-      // { name: 'Next JS' },
-      { name: 'Tailwind CSS' },
-      // { name: 'GSAP' },
-      { name: 'Material UI' },
+      // { name: 'Material UI' },
       { name: 'Bootstrap' },
     ],
   },
-  // {
-  //   title: 'Backend',
-  //   skills: [
-  //     // { name: 'Springboot' },
-  //     { name: 'Node JS' },
-  //     // { name: 'Express JS' },
-  //     { name: 'MySQL' },
-  //     // { name: 'MongoDB' },
-  //     // { name: 'Firebase' },
-  //     // { name: 'PostgreSQL' },
-  //   ],
-  // },
- 
+  {
+    title: 'Backend',
+    skills: [
+      { name: 'MySQL' },
+      { name: 'Firebase' },
+    ],
+  },
   {
     title: 'Tools',
     skills: [
       { name: 'Git' },
       { name: 'GitHub' },
       { name: 'VS Code' },
-      // { name: 'Postman' },
-      // { name: 'Compass' },
-      { name: 'Vercel' },
-      // { name: 'Netlify' },
-      { name: 'Figma' },
-      // { name: '  Figma' },
+      { name: 'Netlify' },
     ],
   },
-   {
+  {
     title: 'Languages',
     skills: [
-      { name: 'C' },
-      // { name: 'C++' },
-      // { name: 'Java' },
-      // { name: 'Python' },
-      // { name: 'C-Sharp' },
-      { name: 'JavaScript' },
-      { name: 'TypeScript' },
+      { name: 'C++' },
+      { name: 'Python' },
+    ],
+  },
+  {
+    title: 'Cyber Security',
+    skills: [
+      { name: 'NMAP' },
+      { name: 'Burp Suite' },
+      { name: 'SQL Injection' },
+      { name: 'Cross-Site Scripting (XSS)' },
+    ],
+  },
+  {
+    title: 'Electronics',
+    skills: [
+      { name: 'Rasberry-pi pico' },
+      { name: 'ESP-32' },
+      
+      
     ],
   },
 ];
@@ -115,29 +114,39 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    school: "Bhopal Institute of Technology And Science",
-    degree: "B.Tech (Bachelor of Technology)",
-    date: " Sept 2023 – Present",
+    school: "Indian Institute of Technology Madras (IITM), Chennai",
+    degree: "BS in Data Science",
+    date: " Sept 2024 – Present",
     // grade: "7.81 CGPA",
-    desc: "I am currently pursuing a Bachelor of Technology in Computer Science and Engineering, where I am building a solid foundation in programming, software development, and core computer science concepts. Throughout my studies, I have been actively engaging with subjects such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, and Software Engineering. In addition to classroom learning, I regularly participate in coding challenges, project-based tasks, and technical workshops to strengthen my practical skills. My ongoing academic journey is focused on learning through real-world application, collaboration, and continuous improvement.",
+    // desc: "I am currently pursuing a Bachelor of Technology in Computer Science and Engineering, where I am building a solid foundation in programming, software development, and core computer science concepts. Throughout my studies, I have been actively engaging with subjects such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, and Software Engineering. In addition to classroom learning, I regularly participate in coding challenges, project-based tasks, and technical workshops to strengthen my practical skills. My ongoing academic journey is focused on learning through real-world application, collaboration, and continuous improvement.",
   },
   {
     id: 1,
-    school: "Lalit Narain Tirhut Mahavidyalaya",
-    degree: "BSEB(XII) - PCM ",
-    date: "04/2021 - 03/2023, ",
-    grade: "73%",
-    desc: "I completed my Senior Secondary education in the Science stream with a focus on Physics, Chemistry, and Mathematics (PCM). During this time, I developed strong analytical and problem-solving skills, which laid the foundation for my interest in technology and programming. This academic phase played a vital role in shaping my logical thinking and preparing me for further studies in Computer Science and Engineering."
+    school: "Truba Institute of Engineering & Information Technology (TIEIT), Bhopal",
+    degree: "B.Tech in CSE (Core)",
+    date: "July 2024 - Present ",
+    // grade: "73%",
+    // desc: "I completed my Senior Secondary education in the Science stream with a focus on Physics, Chemistry, and Mathematics (PCM). During this time, I developed strong analytical and problem-solving skills, which laid the foundation for my interest in technology and programming. This academic phase played a vital role in shaping my logical thinking and preparing me for further studies in Computer Science and Engineering."
 
   },
 
   {
     id: 2,
-    school: "High School Sondho",
+    school: "Millia Convent English School, Purnea Bihar",
+    date: "04/2021 - 03/2023, ",
+    grade: "75%",
+    degree: "CBSE(XII) Secondary School",
+  // desc: "I completed my secondary education from High School Sondho, where I developed a strong interest in Science and Mathematics. My curiosity in understanding how things work, solving numerical problems, and exploring scientific principles laid the foundation for choosing Physics, Chemistry, and Mathematics (PCM) as my core subjects in higher secondary education."
+
+  },
+
+  {
+    id: 3,
+    school: "Indian Public School, Purnea Bihar",
     date: "04/2020 - 03/2021, ",
-    grade: "63%",
-    degree: "BSEB(X) Secondary School",
-  desc: "I completed my secondary education from High School Sondho, where I developed a strong interest in Science and Mathematics. My curiosity in understanding how things work, solving numerical problems, and exploring scientific principles laid the foundation for choosing Physics, Chemistry, and Mathematics (PCM) as my core subjects in higher secondary education."
+    grade: "64%",
+    degree: "CBSE(X) Secondary School",
+  // desc: "I completed my secondary education from High School Sondho, where I developed a strong interest in Science and Mathematics. My curiosity in understanding how things work, solving numerical problems, and exploring scientific principles laid the foundation for choosing Physics, Chemistry, and Mathematics (PCM) as my core subjects in higher secondary education."
 
   },
 ];

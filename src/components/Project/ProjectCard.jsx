@@ -1,5 +1,5 @@
 import React from 'react'
-import bannerImg from "../../assets/bannerImg.webp"
+
 
 const ProjectCard = ({ title, main, href, sourselink, imgsrc,aos }) => {
     return (

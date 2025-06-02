@@ -7,21 +7,36 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap } from "react-icons/fa";
 import { SiTailwindcss, SiMui } from "react-icons/si";
+import { percent } from "framer-motion";
+import { FaMicrochip } from 'react-icons/fa';
+import { SiRaspberrypi } from 'react-icons/si';
+import { FaLinux } from 'react-icons/fa'; 
+import { FaGitAlt } from 'react-icons/fa';
+
 
 
 const technicalSkills = [
-  { name: 'HTML', percent: 90, icon: FaHtml5 },
+  { name: 'HTML', percent: 80, icon: FaHtml5 },
   { name: 'CSS', percent: 60, icon: FaCss3Alt },
-  { name: 'JavaScript', percent: 75, icon: FaJs },
-  { name: 'React', percent: 75, icon: FaReact },
-  { name: 'Tailwind CSS', percent: 65, icon: SiTailwindcss },
-  { name: 'MUI', percent: 70, icon: SiMui },
+  { name: 'JavaScript', percent: 70, icon: FaJs },
+  { name: 'React', percent: 60, icon: FaReact },
+  // { name: 'Tailwind CSS', percent: 65, icon: SiTailwindcss },
+  // { name: 'MUI', percent: 70, icon: SiMui },
   { name: 'Bootstrap', percent: 60, icon: FaBootstrap },
+  // { name: 'Arduino', percent: 55, icon: FaMicrochip },
+  // { name: 'Node.js', percent: 50, icon: FaJs },
+  // { name: 'Express.js', percent: 50, icon: FaJs },
+  // { name: 'MongoDB', percent: 40, icon: FaJs },
+  { name: 'Git', percent: 70, icon: FaGitAlt },
+  { name: 'Linux', percent: 60, icon: FaLinux },
+
+  { name: 'ESP32', percent: 45, icon: FaMicrochip },
+  { name: 'Raspberry Pi', percent: 50, icon: SiRaspberrypi },
 ];
 
 const professionalSkills = [
-  { name: 'Creativity', percent: 80 },
-  { name: 'Communication', percent: 65 },
+  { name: 'Creativity', percent: 70 },
+  { name: 'Communication', percent: 50 },
   { name: 'Problem Solving', percent: 75 },
   { name: 'Teamwork', percent: 85 },
 ]

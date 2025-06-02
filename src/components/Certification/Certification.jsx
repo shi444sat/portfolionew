@@ -1,63 +1,58 @@
 import React from 'react'
 import Skills from '../Skills/Skills';
-import html from "../../assets/html-certification.png"
-import css from "../../assets/css-certification.png"
-import javascript from "../../assets/javascript-certification.png"
-import typescript from "../../assets/typescript-certification.png"
-import react from "../../assets/react-certification.png"
+
+
+import cer4 from "../../assets/Cert4.jpg"
+import cer3 from "../../assets/Cert3.jpg"
+import cer2 from "../../assets/Cert2.jpg"
+import cer1 from "../../assets/Cert1.jpg"
+
 const Certification = () => {
     const aboutinfo = [
         {
-            img: typescript,
-            heading: 'TypeScript',
+            img: cer4,
+            heading: 'Hackathon',
             date: "May 2025",
-            Skill: 'TypeScript',
-            Platform: 'Simplilearn',
-            desc: "🎉 Excited to share that I have successfully completed the HTML certification from Simplilearn SkillUp! 💻✨",
-            link: 'https://simpli.app.link/9Y2wuiDjBTb '
+            Skill: 'BlockChain',
+            Platform: 'Geeks of gurukul',
+            desc: " ✨ Excited to share that I have successfully participated in the Edu Blockchain Build Station Hackathon organized by Geeks of Gurukul in collaboration withCore ecosystem.",
+            link: 'https://simpli.app.link/9Y2wuiDjBTb'
 
         },
         {
-            img: react,
-            heading: 'React',
-            date: "May 2025",
-            Skill: 'React',
-            Platform: 'Scaler',
-            desc: "🎉 Excited to share that I have successfully completed the React JS Course from Scaler Topics! ⚛️💻",
+            img: cer3,
+            heading: 'Hackathon',
+            date: "20th-21st Dec 2025",
+            Skill: 'Blockchain',
+            Platform: 'Geeks Of Gurukul',
+            desc: "✨ Excited to share that I have successfully participated in the Edu Blockchain Build Station Hackathon organized by Geeks of Gurukul, in collaboration with Rise In and Edu Chain, held on 20th–21st December 2024.",
             link: 'https://moonshot.scaler.com/s/li/bPVedZC-9O',
 
 
         },
         {
-            img: javascript,
-            heading: 'JavaScript',
-            date: "April 2025",
-            Skill: 'JavaScript',
-            Platform: 'Simplilearn',
-            desc: "🎉 Excited to share that I have successfully completed the HTML certification from Simplilearn SkillUp! 💻✨",
+            img: cer2,
+            heading: 'Inter-College Knowledge Competition',
+            date: "8th Dec 2024",
+            Skill: 'Competition',
+            Platform: 'Vision Ias',
+            desc: "✨ Excited to share that I was selected among the Top 5 finalists in the Intra-College round of Pratispardha-Bhopal, an inter-college knowledge competition organized by VisionIAS. 🏆",
             link: 'https://simpli.app.link/7HVHPxUVfTb'
+
+            
         },
 
         {
-            img: css,
-            heading: 'CSS',
-            date: "Oct 2024",
-            Skill: 'CSS',
-            Platform: 'Simplilearn',
-            desc: "🎉 Excited to share that I have successfully completed the HTML certification from Simplilearn SkillUp! 💻✨",
+            img: cer1,
+            heading: 'Admission to B.S. Degree in Data Science and Applications',
+            date: "Sept 2024",
+            Skill: 'Data Science',
+            Platform: 'IIT Madras',
+            desc: "✨ Excited to share that I have successfully secured admission to the Foundation level of the B.S. Degree in Data Science and Applications at the Indian Institute of Technology, Madras (IIT Madras)! 🇮🇳📊",
+
             link: 'https://simpli.app.link/t5lh2YiVfTb'
         },
-        {
-            img: html,
-            heading: 'HTML',
-            date: "Nov 2023",
-            Skill: 'HTML',
-            Platform: 'Simplilearn',
-            desc: "🎉 Excited to share that I have successfully completed the HTML certification from Simplilearn SkillUp! 💻✨",
-            link: 'https://simpli.app.link/6t4C5gAUfTb',
-
-        },
-
+        
 
     ]
     return (

@@ -1,47 +1,77 @@
-import { Route, Router, Routes } from 'react-router-dom';
-import './App.css'
+import { Element } from 'react-scroll';
+import './App.css';
 import About from './components/About/About';
-import Experience from './components/Experience/Experience';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Project from './components/Project/Project';
 import Skills from './components/Skills/Skills';
 import Education from './components/Education/Education';
-import Cursor from './components/Cursor';
+// import Cursor from './components/Cursor';
 import Snowfall from './components/Snowfall';
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import Loader from './components/Loader';
-// import Certification from './components/Certification/Certification';
 
-const Certification = lazy(() => import('./components/Certification/Certification')); // Lazy load your component
-
+const Certification = lazy(() => import('./components/Certification/Certification'));
 
 function App() {
-  return (
-    <div className='bg-[#050414]  h-auto w-full overflow-hidden'>
+  const [activeSection, setActiveSection] = useState('home');
 
-      {/* <div className='absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%)]'></div> */}
-      <div className='relative md:pt-5 pt-7'>
-        <Cursor />
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 100; // Adjust for navbar height
+
+      const sections = document.querySelectorAll('[data-section]');
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          setActiveSection(section.id);
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <div className='bg-[#050414] h-auto w-full overflow-hidden'>
+      <div className='relative'>
+        {/* <Cursor /> */}
         <Snowfall />
-        <Navbar />
+        <Navbar activeSection={activeSection} />
+        
+        <Element name="home" data-section id="home">
+          <Home />
+        </Element>
+        
+        <Element name="about" data-section id="about">
+          <About />
+        </Element>
+        
+        <Element name="skills" data-section id="skills">
+          <Skills />
+        </Element>
+        
+        <Element name="project" data-section id="project">
+          <Project />
+        </Element>
+        
+        <Element name="education" data-section id="education">
+          <Education />
+        </Element>
+        
         <Suspense fallback={<Loader />}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/skills" element={<Skills />} />
-            {/* <Route path="/experience" element={<Experience />} /> */}
-            <Route path="/project" element={<Project />} />
-            <Route path="/education" element={<Education />} />
-            <Route path="/certification" element={<Certification />} />
-          </Routes>
+          <Element name="certification" data-section id="certification">
+            <Certification />
+          </Element>
         </Suspense>
 
         <Footer />
-
       </div>
-
     </div>
   );
 }

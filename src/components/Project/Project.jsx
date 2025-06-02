@@ -2,9 +2,11 @@ import React, { useEffect } from 'react'
 import ProjectCard from './ProjectCard'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import spotifyImg from '../../assets/spotify-img.png';
-import myntraImg from '../../assets/myntra-img.png';
-import weather from '../../assets/weather-img.png';
+import pro1 from '../../assets/project1.png';
+import pro3 from '../../assets/project3.png';
+import pro2 from '../../assets/project2.png';
+
+
 
 const Project = () => {
     useEffect(() => {
@@ -27,9 +29,9 @@ const Project = () => {
             </div>
             {/* <h1 data-aos="fade-down"  className='text-2xl md:text-4xl text-white font-bold'>Projects </h1> */}
             <div className='py-12 px-2 w-full md:justify-center flex flex-wrap gap-8'>
-                <ProjectCard aos="fade-right" imgsrc={myntraImg} title="Myntra Clone" sourselink={"https://github.com/swati7543/myntra"} main="A stylish e-commerce website inspired by Myntra, built using React.js. Features modern UI components and product showcase functionality." />
-                <ProjectCard aos="fade-left" imgsrc={spotifyImg} title="spotify-app" href={"https://spotify-app-omega-jade.vercel.app"} sourselink={"https://github.com/swati7543/spotify-app"} main="A music streaming app UI created in React.js with cool visual components. Includes login and playlist display for a real Spotify-like feel." />
-                <ProjectCard aos="fade-right" imgsrc={weather} title="weather search app" sourselink={"https://github.com/swati7543/weather"} main="A weather forecast app built in React.js that lets users search any city and view real-time weather data with a clean and responsive UI." />
+                <ProjectCard aos="fade-right" imgsrc={pro1} title="Content Management System" href={"https://priyavats.in"} main="A fully dynamic & responsive website for creative content." />
+                <ProjectCard aos="fade-left" imgsrc={pro2} title="3×3×3 LED Cube with Raspberry Pi Pico" href={"https://youtu.be/pgK3A_iLGBI"} sourselink={"https://github.com/shi444sat/Rasberrypie"} main= "Built a 3D LED cube using Raspberry Pi Pico and controlled it via MicroPython." />
+                <ProjectCard aos="fade-right" imgsrc={pro3} title="Hand Detection With OpenCV & Media Pipe" href={"https://youtu.be/PDdTVN4PuPA"} sourselink={"https://github.com/shi444sat/Hand-Detection"} main="Show Middle Finger Your System Go Boom!!!!!." />
             </div>
         </div>
     )
