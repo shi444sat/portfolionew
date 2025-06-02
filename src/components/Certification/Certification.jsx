@@ -16,7 +16,7 @@ const Certification = () => {
             Skill: 'BlockChain',
             Platform: 'Geeks of gurukul',
             desc: " ✨ Excited to share that I have successfully participated in the Edu Blockchain Build Station Hackathon organized by Geeks of Gurukul in collaboration withCore ecosystem.",
-            link: 'https://simpli.app.link/9Y2wuiDjBTb'
+            link: 'https://ibb.co/RkQYTc5n'
 
         },
         {
@@ -26,7 +26,7 @@ const Certification = () => {
             Skill: 'Blockchain',
             Platform: 'Geeks Of Gurukul',
             desc: "✨ Excited to share that I have successfully participated in the Edu Blockchain Build Station Hackathon organized by Geeks of Gurukul, in collaboration with Rise In and Edu Chain, held on 20th–21st December 2024.",
-            link: 'https://moonshot.scaler.com/s/li/bPVedZC-9O',
+            link: 'https://ibb.co/mVm5XhxX',
 
 
         },
@@ -37,7 +37,7 @@ const Certification = () => {
             Skill: 'Competition',
             Platform: 'Vision Ias',
             desc: "✨ Excited to share that I was selected among the Top 5 finalists in the Intra-College round of Pratispardha-Bhopal, an inter-college knowledge competition organized by VisionIAS. 🏆",
-            link: 'https://simpli.app.link/7HVHPxUVfTb'
+            link: 'https://ibb.co/ZQwHY5d'
 
             
         },
@@ -50,7 +50,7 @@ const Certification = () => {
             Platform: 'IIT Madras',
             desc: "✨ Excited to share that I have successfully secured admission to the Foundation level of the B.S. Degree in Data Science and Applications at the Indian Institute of Technology, Madras (IIT Madras)! 🇮🇳📊",
 
-            link: 'https://simpli.app.link/t5lh2YiVfTb'
+            link: 'https://ibb.co/9H86qXtH'
         },
         
 
